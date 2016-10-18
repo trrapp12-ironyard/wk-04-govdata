@@ -28,4 +28,6 @@ window.onload = function climateChange () {
 };
 
 
-25
+document.getElementById('display').innerHTML = formula () {
+
+}
