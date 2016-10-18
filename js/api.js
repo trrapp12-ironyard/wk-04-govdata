@@ -2,32 +2,31 @@
    Climate Change Adaptation Task Force
 */
 
-var ourData = {};
+window.onload = function deathsByCity () {
 
-window.onload = function climateChange () {
+  let url = 'https://data.cdc.gov/api/views/rpjd-ejph/rows.json?accessType=DOWNLOAD'
 
-  let url = 'https://open.whitehouse.gov/resource/ybwj-5tg8.json'
-
-  // over 27,000 hits with the following
-  // $.get(url, function(data) {
-  //   console.log(data);
-  // });
-
-  // we'll do the long version to prevent overload
-  $.ajax({
+//this sets the $.ajax equal to a variable that we can access//
+  var jQueryPromise = $.ajax({
     dataType: "json",
     url: url,
     data: {
-      "$limit" : 100
+      "$limit" : 102
     }
-  }).done(function(data) {
-    ourData = data;
-    console.log(ourData)
+  })
+
+
+//This sets the resolve situation equal to a variable that we can access//
+
+//moved it within the scope of the larger function so realPromise could have access to jQueryPromise//
+  var realPromise = Promise.resolve(jQueryPromise);
+
+
+  realPromise.then(function(response){
+    console.log("got data");
+    createTable(response);
+  }, function(err) {
+    console.log("err:", err);
   })
 
 };
-
-
-document.getElementById('display').innerHTML = formula () {
-
-}

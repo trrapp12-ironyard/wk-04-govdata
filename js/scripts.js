@@ -1,31 +1,15 @@
-/* https://open.whitehouse.gov/ data from the
-   Climate Change Adaptation Task Force
-*/
+"use strict";
 
-var ourData = {};
-
-window.onload = function climateChange () {
-
-  let url = 'https://open.whitehouse.gov/resource/ybwj-5tg8.json'
-
-  // over 27,000 hits with the following
-  // $.get(url, function(data) {
-  //   console.log(data);
-  // });
-
-  // we'll do the long version to prevent overload
-  $.ajax({
-    dataType: "json",
-    url: url,
-    data: {
-      "$limit" : 100
-    }
-  }).done(function(data) {
-    ourData = data;
-    console.log(ourData)
-  })
+function createTable (dataSet) {
+  let data = dataSet.data;
+  data.map(tableMaker);
+  data.map(console.log(data[8]));
 
 };
 
-
-25
+function tableMaker (locationAndDate) {
+  const msg = "<tr><td>" + locationAndDate[8]
+              + "</td><td>" + locationAndDate[9]
+              + "</td></tr>\n"
+  document.querySelector("#table").innerHTML += msg;
+}
