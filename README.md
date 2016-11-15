@@ -1,56 +1,16 @@
 # wk-04-govdata
 ---
+![gov-data](https://cloud.githubusercontent.com/assets/11747875/20291761/b68da344-aaa5-11e6-93b2-68c9e30a8fd0.png)
+
 
 ###This project demonstrates the following:
 ---
 
-- [x] Include imported css.
-
-#####Apply styles based on the following selectors and selector combinations:
----
-
-- [x] element
-- [x] class
-- [x] id
-- [x] distinct nested element and class combination (i.e. if applied to element
-- [x] distinct nested element and class combination (i.e. if applied to element _or_ class _alone_ then additional nodes would be also be styled;  e.g. `p a`)
-- [x] shared styles (e.g. `p, a`)
-
-#####Add styling including at least one instance for each of these **properties**:
----
-
-- [x] width
-- [x] height
-- [x] display
-- [x] margin
-- [x] padding
-- [x] border
-- [x] background-color
-- [x] background-image
-- [x] color
-- [x] font-size
-- [x] font-style
-- [x] text-align
-- [x] font-weight
-
-#####Use the following measurements at least once:
----
-
-- [x] px
-- [x]  %
-- [x] em
-- [x] Modify each of the four different anchor states
-
-#####Make
----
-
-- [x] small and frequent git commits
-- [x] with messages following the basic AngularJS Git Commit Msg Convention style (per [Git Commit Messages](https://karma-runner.github.io/1.0/dev/git-commit-msg.html))
-- [x] Ensure you've set the GitHub pages to use your "master branch".
-- [x] Use a background gradiant
-
-<br/>
-<br/>
+- [x] Select a data source from https://www.data.gov/
+- [x] Successfully make an api call.
+- [x] Parse JSON data.
+- [x] Develop a single page html site which allows a user to view a sub-set of the data you've selected.
+- [] The site must be styled - you are encouraged but not required to use Bootstrap.
 
 
 ###Project published at: 
