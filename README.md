@@ -10,7 +10,7 @@
 - [x] Successfully make an api call.
 - [x] Parse JSON data.
 - [x] Develop a single page html site which allows a user to view a sub-set of the data you've selected.
-- [] The site must be styled - you are encouraged but not required to use Bootstrap.
+- [ ] The site must be styled - you are encouraged but not required to use Bootstrap.
 
 
 ###Project published at: 
