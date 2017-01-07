@@ -11,7 +11,7 @@ window.onload = function deathsByCity () {
     dataType: "json",
     url: url,
     data: {
-      "$limit" : 102
+      "$limit" : 10
     }
   })
 
